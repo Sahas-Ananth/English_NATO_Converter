@@ -114,11 +114,15 @@ def main():
     )
     sep = "" if decode else " "
 
-    with stream:
-        for line in stream:
-            line_content = line.strip().lower()
-            input_text = line_content.split() if decode else line_content
-            print(transform(input_text, mapping, sep))
+    try:
+        with stream:
+            for line in stream:
+                line_content = line.strip().lower()
+                input_text = line_content.split() if decode else line_content
+                print(transform(input_text, mapping, sep))
+    except KeyboardInterrupt:
+        print()
+        return
 
 
 if __name__ == "__main__":

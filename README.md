@@ -34,49 +34,57 @@ options:
 ### Example Usage
 
 Via CLI argument:
-```bash
-eng2nato The Quick Brown Fox Jumps Over The Lazy Dog
+```console
+foo@bar$ eng2nato The Quick Brown Fox Jumps Over The Lazy Dog
+```
+To decode:
+```console
+foo@bar$ eng2nato -d Alfa Bravo
 ```
 Via `stdin`:
-```bash
-echo "The Quick Brown Fox Jumps Over The Lazy Dog" | eng2nato
-# or for interactive conversion: (Enter or <cr> converts the line)
-eng2nato
+```console
+foo@bar$ echo "The Quick Brown Fox Jumps Over The Lazy Dog" | eng2nato
 ```
+or for interactive conversion: (Enter or `<cr>` converts the line)
+```console
+foo@bar$ eng2nato
+```
+to decode just add the `-d` or `--decode` flag to the command.
 
 Via file input:
-```bash
-eng2nato -i # <PATH TO FILE>
+```console
+foo@bar$ eng2nato -i # <PATH TO FILE>
 ```
+Similarly to decode add the `-d` or `--decode` flag to the command.
 
 ## Current Mapping
 
 | Letter | NATO Phonetic Equivalent |
-|--------|---------------------------|
-| a      | Alfa                      |
-| b      | Bravo                     |
-| c      | Charlie                   |
-| d      | Delta                     |
-| e      | Echo                      |
-| f      | Foxtrot                   |
-| g      | Golf                      |
-| h      | Hotel                     |
-| i      | India                     |
-| j      | Juliett                   |
-| k      | Kilo                      |
-| l      | Lima                      |
-| m      | Mike                      |
-| n      | November                  |
-| o      | Oscar                     |
-| p      | Papa                      |
-| q      | Quebec                    |
-| r      | Romeo                     |
-| s      | Sierra                    |
-| t      | Tango                     |
-| u      | Uniform                   |
-| v      | Victor                    |
-| w      | Whiskey                   |
-| x      | Xray                      |
-| y      | Yankee                    |
-| z      | Zulu                      |
-| (space)| (space)                   |
+|--------|--------------------------|
+| a      | Alfa                     |
+| b      | Bravo                    |
+| c      | Charlie                  |
+| d      | Delta                    |
+| e      | Echo                     |
+| f      | Foxtrot                  |
+| g      | Golf                     |
+| h      | Hotel                    |
+| i      | India                    |
+| j      | Juliett                  |
+| k      | Kilo                     |
+| l      | Lima                     |
+| m      | Mike                     |
+| n      | November                 |
+| o      | Oscar                    |
+| p      | Papa                     |
+| q      | Quebec                   |
+| r      | Romeo                    |
+| s      | Sierra                   |
+| t      | Tango                    |
+| u      | Uniform                  |
+| v      | Victor                   |
+| w      | Whiskey                  |
+| x      | Xray                     |
+| y      | Yankee                   |
+| z      | Zulu                     |
+| (space)| (space)                  |
